@@ -14,6 +14,8 @@ HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
+# allow modification of history line before passing to shell parser
+shopt -s histverify
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -76,18 +78,19 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
 fi
 
 # some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
+alias l='ls -lFh'     # long format, append indicator to entries, sizes human readable
+alias la='ls -lAFh'   # long format, do not list . and .., append indicator to entries, sizes human readable
+alias lr='ls -tRFh'   # sort by date, recursive, append indicator to entries, sizes human readable
+alias lt='ls -ltFh'   # long format, sort by date, append indicator to entries, sizes human readable
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -108,4 +111,12 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+function todo {
+  if [ $1 ]; then
+    vim ~/todo/$1
+  else
+    ls ~/todo
+  fi
+}
 
