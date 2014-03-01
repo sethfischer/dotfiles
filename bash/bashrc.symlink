@@ -112,6 +112,11 @@ if ! shopt -oq posix; then
     fi
 fi
 
+# add composer bin directory to path
+if [ -d $HOME/.composer/vendor/bin ]; then
+    PATH="$HOME/.composer/vendor/bin:$PATH"
+fi
+
 function todo {
     if [ $1 ]; then
         vim ~/todo/$1
