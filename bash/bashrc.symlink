@@ -117,11 +117,3 @@ if [ -d $HOME/.composer/vendor/bin ]; then
     PATH="$HOME/.composer/vendor/bin:$PATH"
 fi
 
-function todo {
-    if [ $1 ]; then
-        vim ~/todo/$1
-    else
-        ls ~/todo
-    fi
-}
-
