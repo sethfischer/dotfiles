@@ -117,3 +117,9 @@ if [ -d $HOME/.composer/vendor/bin ]; then
     PATH="$HOME/.composer/vendor/bin:$PATH"
 fi
 
+# drush aliases
+if [ -f ~/.drush_bashrc ] ; then
+    . ~/.drush_bashrc
+fi
+
+
