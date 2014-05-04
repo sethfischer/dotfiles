@@ -91,6 +91,7 @@ alias l='ls -lFh'     # long format, append indicator to entries, sizes human re
 alias la='ls -lAFh'   # long format, do not list . and .., append indicator to entries, sizes human readable
 alias lr='ls -tRFh'   # sort by date, recursive, append indicator to entries, sizes human readable
 alias lt='ls -ltFh'   # long format, sort by date, append indicator to entries, sizes human readable
+alias g='grep -nriI'  #
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
