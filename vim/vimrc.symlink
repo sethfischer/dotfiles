@@ -55,6 +55,9 @@ endfunction
 
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L\ Column:\%c
 
+
+"""""" PHP/Drupal """"""
+
 " syntax highlighting inside php sql queries
 let php_sql_query = 1
 
@@ -63,4 +66,22 @@ set tabstop=2 shiftwidth=2
 
 " give other files php syntax highlighting
 autocmd BufRead .inc,.module,.install,.test set ft=php
+
+
+"""""" GnuPG Extensions """"""
+
+let g:GPGPreferArmor=1
+let g:GPGPreferSign=1
+
+augroup GnuPGExtra
+    autocmd BufReadCmd,FileReadCmd *.\(gpg\|asc\|pgp\) call SetGPGOptions()
+    autocmd CursorHold *.\(gpg\|asc\|pgp\) quit
+augroup END
+
+function SetGPGOptions()
+    set updatetime=60000
+    set foldmethod=marker
+    set foldclose=all
+    set foldopen=insert
+endfunction
 
