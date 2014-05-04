@@ -49,7 +49,7 @@ autocmd BufWritePre *.module,*.install,*.inc,*.php :call StripTrailingWhitespace
 
 " format statusline
 function! CurDir()
-    let curdir = substitute(getcwd(), '/home/samb', "~/", "g")
+    let curdir = substitute(getcwd(), '/home/'.$USER.'/', "~/", "g")
     return curdir
 endfunction
 
