@@ -23,6 +23,7 @@ set noerrorbells
 filetype on
 filetype plugin on
 syntax on
+set spell spelllang=en_gb
 
 hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 
