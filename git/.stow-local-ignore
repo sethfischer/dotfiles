@@ -1,0 +1,22 @@
+# Default ignore list with \.gitignore removed
+
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
