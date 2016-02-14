@@ -14,8 +14,6 @@ HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
-# allow modification of history line before passing to shell parser
-shopt -s histverify
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -49,19 +47,19 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-    # We have color support; assume it's compliant with Ecma-48
-    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-    # a case would tend to support setf rather than setaf.)
-    color_prompt=yes
+        # We have color support; assume it's compliant with Ecma-48
+        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+        # a case would tend to support setf rather than setaf.)
+        color_prompt=yes
     else
-    color_prompt=
+        color_prompt=
     fi
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}[\033[01;32m]\u@\h[\033[00m]:[\033[01;34m]\w[\033[31m]$(__git_ps1 "(%s)")[\033[01;34m][\033[00m]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1 "(%s)")\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -86,12 +84,13 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
 # some more ls aliases
-alias l='ls -lFh'     # long format, append indicator to entries, sizes human readable
-alias la='ls -lAFh'   # long format, do not list . and .., append indicator to entries, sizes human readable
-alias lr='ls -tRFh'   # sort by date, recursive, append indicator to entries, sizes human readable
-alias lt='ls -ltFh'   # long format, sort by date, append indicator to entries, sizes human readable
-alias g='grep -nriI'  #
+#alias ll='ls -l'
+#alias la='ls -A'
+#alias l='ls -CF'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -100,6 +99,13 @@ alias g='grep -nriI'  #
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+# load all files from ~/.bashrc.d/
+if [ -d $HOME/.bashrc.d ]; then
+    for file in $HOME/.bashrc.d/*.bash; do
+        . $file
+    done
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -112,15 +118,4 @@ if ! shopt -oq posix; then
         . /etc/bash_completion
     fi
 fi
-
-# add composer bin directory to path
-if [ -d $HOME/.composer/vendor/bin ]; then
-    PATH="$HOME/.composer/vendor/bin:$PATH"
-fi
-
-# drush aliases
-if [ -f ~/.drush_bashrc ] ; then
-    . ~/.drush_bashrc
-fi
-
 
