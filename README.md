@@ -4,20 +4,34 @@ sethfischer's dotfiles
 Install
 -------
 
+Install [GNU Stow][1]:
+
 ```sh
-git clone https://github.com/sethfischer/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-./bootstrap
+sudo apt-get install stow
 ```
 
-This will symlink the appropriate files in `.dotfiles` to your home directory.
+Clone the repository:
 
-Project structure inspired by [Zach Holman's dotfiles][1]. The [bootstrap][2]
-file is Copyright (c) [Zach Holman][3], and released under the [MIT License][4].
+```sh
+git clone https://github.com/sethfischer/dotfiles.git ~/.dotfiles
+```
 
+Dotfiles are symlinked to the home directory with GNU Stow. The examples
+below demonstrate how the bash settings are installed and uninstalled.
 
-[1]: https://github.com/holman/dotfiles
-[2]: bootstrap
-[3]: http://zachholman.com/
-[4]: LICENCE.bootstrap
+Install bash settings:
+
+```sh
+cd ~/.dotfiles
+stow bash
+```
+
+Uninstall bash settings:
+
+```sh
+cd ~/.dotfiles
+stow -D bash
+```
+
+[1]: http://www.gnu.org/software/stow/
 
