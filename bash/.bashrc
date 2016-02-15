@@ -30,6 +30,16 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+# load files from ~/.bashrc.d/
+if [ -d $HOME/.bashrc.d ]; then
+    for file in $HOME/.bashrc.d/*.sh; do
+        . $file
+    done
+fi
+
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
@@ -57,9 +67,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1 " (%s)")\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -99,13 +109,6 @@ fi
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
-fi
-
-# load all files from ~/.bashrc.d/
-if [ -d $HOME/.bashrc.d ]; then
-    for file in $HOME/.bashrc.d/*.bash; do
-        . $file
-    done
 fi
 
 # enable programmable completion features (you don't need to enable
