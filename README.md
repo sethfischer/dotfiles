@@ -17,20 +17,31 @@ git clone https://github.com/sethfischer/dotfiles.git ~/.dotfiles
 ```
 
 Dotfiles are symlinked to the home directory with GNU Stow. The examples
-below demonstrate how the bash settings are installed and uninstalled.
+below demonstrate how GNU Bash configuration is enabled and disabled.
 
-Install bash settings:
+Enable Bash configuration:
 
 ```sh
 cd ~/.dotfiles
 stow bash
 ```
 
-Uninstall bash settings:
+Disable Bash configuration:
 
 ```sh
 cd ~/.dotfiles
 stow -D bash
+```
+
+Git configuration is enabled with an include.path variable (git 1.7.10+) in
+`~/.gitconfig`.
+
+```
+[user]
+    name = Your Name
+    email = user@example.com
+[include]
+    path = .gitrc.d/gitconfig
 ```
 
 [1]: http://www.gnu.org/software/stow/
