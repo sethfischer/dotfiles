@@ -1,0 +1,5 @@
+packages: [
+  "language-puppet"
+  "package-sync"
+  "sort-lines"
+]
