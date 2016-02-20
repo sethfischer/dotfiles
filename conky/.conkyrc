@@ -1,0 +1,42 @@
+# Conky, a system monitor, based on torsmo
+
+alignment top_left
+background no
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+double_buffer yes
+draw_borders no
+draw_graph_borders no
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont DejaVu Sans Mono:size=12
+gap_x 5
+gap_y 60
+minimum_size 5 5
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_class Conky
+own_window_type desktop
+stippled_borders 0
+update_interval 2.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+
+TEXT
+${color grey}$nodename - $sysname $kernel
+$hr
+${color grey}RAM: $color $memperc% ${membar 4}
+${color grey}Swap:$color $swapperc% ${swapbar 4}
+${color grey}CPU: $color $cpu% ${cpubar 4}
+${color grey}Up  :$color ${upspeed eth0}
+${color grey}Down:$color ${downspeed eth0}
