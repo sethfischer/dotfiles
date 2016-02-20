@@ -32,10 +32,11 @@ shopt -s checkwinsize
 
 # load files from ~/.bashrc.d/
 if [ -d $HOME/.bashrc.d ]; then
-    for file in $HOME/.bashrc.d/*.sh; do
-        . $file
+    for bash_file in $HOME/.bashrc.d/*.bash; do
+        . $bash_file
     done
 fi
+unset bash_file
 
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWDIRTYSTATE=1
