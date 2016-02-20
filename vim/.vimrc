@@ -1,3 +1,6 @@
+set nocompatible
+filetype off
+
 set number
 set mouse=a
 set clipboard=unnamed
@@ -20,10 +23,25 @@ set cmdheight=1
 set shortmess=atI
 set report=0
 set noerrorbells
-filetype on
-filetype plugin on
-syntax on
 set spell spelllang=en_gb
+
+" Vundle
+
+" Git clone Vundle
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
+endif
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+    Plugin 'VundleVim/Vundle.vim'
+    Plugin 'editorconfig/editorconfig-vim'
+call vundle#end()
+
+filetype plugin indent on
+syntax on
 
 hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 
