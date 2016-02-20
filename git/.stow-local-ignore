@@ -1,4 +1,4 @@
-# Default ignore list with \.gitignore removed
+# Default ignore list with \.gitignore removed.
 
 RCS
 .+,v
@@ -19,4 +19,3 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
-

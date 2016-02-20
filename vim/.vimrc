@@ -27,7 +27,7 @@ set spell spelllang=en_gb
 
 hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 
-" remove trailing whitespace before write
+" Remove trailing whitespace before write.
 function! StripTrailingWhitespace()
     normal mZ
     %s/\s\+$//e
@@ -39,16 +39,16 @@ endfunction
 
 autocmd BufWritePre *.module,*.install,*.inc,*.php :call StripTrailingWhitespace()
 
-" highlight redundant whitespaces and tabs
+" Highlight redundant whitespaces and tabs.
 :highlight RedundantSpaces ctermbg=red guibg=red
 :match RedundantSpaces /\s\+$\| \+\ze\t\|\t/
 
-" highlight long comment lines
+" Highlight long comment lines.
 :highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
 :match OverLength '\(^\(\s\)\{-}\(*\|//\|/\*\)\{1}\(.\)*\(\%81v\)\)\@<=\(.\)\{1,}$'
 
 
-" format statusline
+" Format status line.
 function! CurDir()
     let curdir = substitute(getcwd(), '/home/'.$USER.'/', "~/", "g")
     return curdir
@@ -57,19 +57,19 @@ endfunction
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L\ Column:\%c
 
 
-"""""" PHP/Drupal """"""
+" PHP/Drupal
 
-" syntax highlighting inside php sql queries
+" Syntax highlighting inside php sql queries.
 let php_sql_query = 1
 
-" tab and shiftwidth according to Drupal coding standard
+" Tab and shiftwidth according to Drupal coding standard.
 set tabstop=2 shiftwidth=2
 
-" give other files php syntax highlighting
+" Give other files php syntax highlighting.
 autocmd BufRead .inc,.module,.install,.test set ft=php
 
 
-"""""" GnuPG Extensions """"""
+" GnuPG Extensions
 
 let g:GPGPreferArmor=1
 let g:GPGPreferSign=1
@@ -85,4 +85,3 @@ function SetGPGOptions()
     set foldclose=all
     set foldopen=insert
 endfunction
-
