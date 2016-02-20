@@ -33,6 +33,12 @@ cd ~/.dotfiles
 stow -D bash
 ```
 
+The following utilities require executing `stow` followed by additional
+configuration.
+
+
+### git
+
 Git configuration is enabled with an include.path variable (git 1.7.10+) in
 `~/.gitconfig`.
 
@@ -44,5 +50,15 @@ Git configuration is enabled with an include.path variable (git 1.7.10+) in
     path = .gitrc.d/gitconfig
 ```
 
-[1]: http://www.gnu.org/software/stow/
 
+### tmux
+
+Clone [Tmux Plugin Manager][2]:
+
+```sh
+mkdir -p ~/.tmux/plugins
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+[1]: http://www.gnu.org/software/stow/
+[2]: https://github.com/tmux-plugins/tpm
