@@ -38,6 +38,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
     Plugin 'editorconfig/editorconfig-vim'
+    Plugin 'ntpeters/vim-better-whitespace'
 call vundle#end()
 
 filetype plugin indent on
@@ -45,21 +46,9 @@ syntax on
 
 hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 
-" Remove trailing whitespace before write.
-function! StripTrailingWhitespace()
-    normal mZ
-    %s/\s\+$//e
-    if line("'Z") != line(".")
-        echo "Stripped whitespace\n"
-    endif
-    normal `Z
-endfunction
+" ntpeters/vim-better-whitespace configuration
+autocmd BufWritePre * StripWhitespace
 
-autocmd BufWritePre *.module,*.install,*.inc,*.php :call StripTrailingWhitespace()
-
-" Highlight redundant whitespaces and tabs.
-:highlight RedundantSpaces ctermbg=red guibg=red
-:match RedundantSpaces /\s\+$\| \+\ze\t\|\t/
 
 " Highlight long comment lines.
 :highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
