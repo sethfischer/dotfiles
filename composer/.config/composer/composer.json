@@ -1,5 +1,6 @@
 {
     "require": {
+        "drupal/console": "^0.10.12",
         "drush/drush": "^8.0"
     }
 }
