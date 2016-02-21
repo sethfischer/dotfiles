@@ -1,10 +1,20 @@
 sethfischer's dotfiles
 ======================
 
+  * [atom][1]
+  * [bash][2]
+  * [composer][3]
+  * [conky][4]
+  * [editorconfig][5]
+  * [git][6]
+  * [tmux][7]
+  * [vim][8]
+
+
 Install
 -------
 
-Install [GNU Stow][1]:
+Install [GNU Stow][9]:
 
 ```sh
 sudo apt-get install stow
@@ -33,9 +43,7 @@ cd ~/.dotfiles
 stow -D bash
 ```
 
-The following utilities require executing `stow` followed by additional
-configuration.
-
+The following utilities require additional configuration.
 
 ### git
 
@@ -53,12 +61,21 @@ Git configuration is enabled with an include.path variable (git 1.7.10+) in
 
 ### tmux
 
-Clone [Tmux Plugin Manager][2]:
+Clone [Tmux Plugin Manager][10]:
 
 ```sh
 mkdir -p ~/.tmux/plugins
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-[1]: http://www.gnu.org/software/stow/
-[2]: https://github.com/tmux-plugins/tpm
+
+[1]: https://atom.io/
+[2]: https://www.gnu.org/software/bash/
+[3]: https://getcomposer.org/
+[4]: https://github.com/brndnmtthws/conky
+[5]: http://editorconfig.org/
+[6]: https://git-scm.com/
+[7]: https://tmux.github.io/
+[8]: http://www.vim.org/
+[9]: http://www.gnu.org/software/stow/
+[10]: https://github.com/tmux-plugins/tpm
