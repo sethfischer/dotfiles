@@ -1,6 +1,9 @@
 {
     "require": {
         "drupal/console": "^0.10.12",
-        "drush/drush": "^8.0"
+        "drush/drush": "^8.0",
+        "phploc/phploc": "*",
+        "pdepend/pdepend": "^2.2",
+        "halleck45/phpmetrics": "^1.8"
     }
 }
