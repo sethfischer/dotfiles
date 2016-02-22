@@ -3,7 +3,8 @@
     ci = commit
     co = checkout
     df = diff
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --no-merges
+    lg = log
+    graph = log --graph --decorate --oneline --pretty=format:"%h%x20%Cgreen%d%x20%Cred%an%x20%Cblue%ad%x20%Creset%s" --all --full-history --date=short
     st = status
 [branch]
     autosetuprebase = always
@@ -30,4 +31,3 @@
     untracked = cyan
 [push]
     default = simple
-
