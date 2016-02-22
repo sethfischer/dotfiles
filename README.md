@@ -6,8 +6,8 @@ sethfischer's dotfiles
   * [composer][3]
   * [conky][4]
   * [editorconfig][5]
-  * [git][6]
-  * [tmux][7]
+  * [git][6] 1.7.10+
+  * [tmux][7] 1.6+
   * [vim][8]
 
 
@@ -45,6 +45,13 @@ stow -D bash
 
 The following utilities require additional configuration.
 
+
+### atom
+
+Install the community package [`package-sync`][10] and execute the command
+`package-sync:sync`.
+
+
 ### git
 
 Git configuration is enabled with an include.path variable (git 1.7.10+) in
@@ -61,7 +68,7 @@ Git configuration is enabled with an include.path variable (git 1.7.10+) in
 
 ### tmux
 
-Clone [Tmux Plugin Manager][10]:
+Clone [Tmux Plugin Manager][11]:
 
 ```sh
 mkdir -p ~/.tmux/plugins
@@ -78,4 +85,5 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 [7]: https://tmux.github.io/
 [8]: http://www.vim.org/
 [9]: http://www.gnu.org/software/stow/
-[10]: https://github.com/tmux-plugins/tpm
+[10]: https://atom.io/packages/package-sync
+[11]: https://github.com/tmux-plugins/tpm
