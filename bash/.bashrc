@@ -39,9 +39,9 @@ if [ -d $HOME/.bashrc.d ]; then
     done
 fi
 
-# load completion files from ~/.bash.completion.d/
-if [ -d $HOME/.bash.completion.d ]; then
-    for bash_file in $HOME/.bash.completion.d/*.completion.bash; do
+# load completion files
+if [ -d $HOME/.bash_completion.d ]; then
+    for bash_file in $HOME/.bash_completion.d/*.completion.bash; do
         . $bash_file
     done
 fi
