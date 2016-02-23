@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 # tmux completion
-# See: http://www.debian-administration.org/articles/317 for how to write more.
-# Usage: Put "source bash_completion_tmux.sh" into your .bashrc
-# Based upon the example at http://paste-it.appspot.com/Pj4mLycDE
+# Based upon the example at https://github.com/Bash-it/bash-it
 
     _tmux_cmds=" \
 attach-session \
