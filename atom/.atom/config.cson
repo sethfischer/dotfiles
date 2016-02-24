@@ -1,12 +1,12 @@
 "*":
-  welcome:
-    showOnStartup: false
   core:
-    projectHome: "~/projects"
     disabledPackages: [
       "exception-reporting"
     ]
+    projectHome: "~/projects"
   editor:
     invisibles: {}
-    showInvisibles: true
     showIndentGuide: true
+    showInvisibles: true
+  welcome:
+    showOnStartup: false
