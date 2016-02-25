@@ -6,6 +6,7 @@
     lg = log
     graph = log --graph --decorate --oneline --pretty=format:"%h%x20%Cgreen%d%x20%Cred%an%x20%Cblue%ad%x20%Creset%s" --all --full-history --date=short
     st = status
+    tag-deploy = ! sh -c 'git tag -a "$(date +%Y%m%d)-$(expr $(git tag | grep $(date +%Y%m%d) | wc -l))" -m \"Release to staging\"'
 [branch]
     autosetuprebase = always
 [core]
