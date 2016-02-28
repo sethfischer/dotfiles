@@ -4,7 +4,9 @@
     co = checkout
     df = diff
     lg = log
-    graph = log --graph --decorate --oneline --pretty=format:"%h%x20%Cgreen%d%x20%Cred%an%x20%Cblue%ad%x20%Creset%s" --all --full-history --date=short
+    graph = log --graph --decorate --oneline \
+        --pretty=format:"%h%x20%Cgreen%d%x20%Cred%an%x20%Cblue%ad%x20%Creset%s" \
+        --all --full-history --date=short
     st = status
     tag-release = ! sh -c 'date=$(date +%Y%m%d) && \
         tag=${date}-$(expr $(git tag | grep $date | wc -l) + 1) && \
