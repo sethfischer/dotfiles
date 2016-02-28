@@ -37,14 +37,18 @@ endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
+    Plugin 'altercation/vim-colors-solarized'
     Plugin 'editorconfig/editorconfig-vim'
     Plugin 'ntpeters/vim-better-whitespace'
 call vundle#end()
 
 filetype plugin indent on
-syntax on
 
-hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+
+" altercation/vim-colors-solarized configuration
+syntax enable
+set background=dark
+colorscheme solarized
 
 " ntpeters/vim-better-whitespace configuration
 autocmd BufWritePre * StripWhitespace

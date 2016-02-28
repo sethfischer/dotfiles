@@ -76,6 +76,15 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 
+### vim
+
+To use the [Solarized Colorscheme for Vim][12] your terminal emulator should
+also be using a [Solarized Colorscheme][13].
+
+  * [Solarized Colorscheme for Gnome Terminal][14]
+  * [Solarized colour scheme for the Xfce4 Terminal][15]
+
+
 [1]: https://atom.io/
 [2]: https://www.gnu.org/software/bash/
 [3]: https://getcomposer.org/
@@ -87,3 +96,7 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 [9]: http://www.gnu.org/software/stow/
 [10]: https://atom.io/packages/package-sync
 [11]: https://github.com/tmux-plugins/tpm
+[12]: https://github.com/altercation/vim-colors-solarized
+[13]: http://ethanschoonover.com/solarized
+[14]: https://github.com/Anthony25/gnome-terminal-colors-solarized
+[15]: https://github.com/sgerrand/xfce4-terminal-colors-solarized
