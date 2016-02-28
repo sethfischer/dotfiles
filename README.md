@@ -46,6 +46,19 @@ stow -D bash
 The following utilities require additional configuration.
 
 
+### Terminal emulator
+
+The Solarized Colorscheme for Vim and dircolors require the terminal emulator
+to be configured to use 256 colours.
+
+In Gnome Terminal select `Run custom command instead of my shell` and enter the
+following custom command:
+
+```
+env TERM=xterm-256color bash
+```
+
+
 ### atom
 
 Install the community package [`package-sync`][10] and execute the command
@@ -78,7 +91,7 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### vim
 
-To use the [Solarized Colorscheme for Vim][12] your terminal emulator should
+To use the [Solarized Colorscheme for Vim][12] the terminal emulator should
 also be using a [Solarized Colorscheme][13].
 
   * [Solarized Colorscheme for Gnome Terminal][14]
