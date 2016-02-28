@@ -4,9 +4,14 @@
       "exception-reporting"
     ]
     projectHome: "~/projects"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
   editor:
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
+  "one-dark-ui": {}
   welcome:
     showOnStartup: false
