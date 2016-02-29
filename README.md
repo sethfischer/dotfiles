@@ -7,14 +7,15 @@ sethfischer's dotfiles
   * [conky][4]
   * [editorconfig][5]
   * [git][6] 1.7.10+
-  * [tmux][7] 1.6+
-  * [vim][8]
+  * [psql][7]
+  * [tmux][8] 1.6+
+  * [vim][9]
 
 
 Install
 -------
 
-Install [GNU Stow][9]:
+Install [GNU Stow][10]:
 
 ```sh
 sudo apt-get install stow
@@ -61,7 +62,7 @@ env TERM=xterm-256color bash
 
 ### atom
 
-Install the community package [`package-sync`][10] and execute the command
+Install the community package [`package-sync`][11] and execute the command
 `package-sync:sync`.
 
 
@@ -81,7 +82,7 @@ Git configuration is enabled with an include.path variable (git 1.7.10+) in
 
 ### tmux
 
-Clone [Tmux Plugin Manager][11]:
+Clone [Tmux Plugin Manager][12]:
 
 ```sh
 mkdir -p ~/.tmux/plugins
@@ -91,11 +92,11 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### vim
 
-To use the [Solarized Colorscheme for Vim][12] the terminal emulator should
-also be using a [Solarized Colorscheme][13].
+To use the [Solarized Colorscheme for Vim][13] the terminal emulator should
+also be using a [Solarized Colorscheme][14].
 
-  * [Solarized Colorscheme for Gnome Terminal][14]
-  * [Solarized colour scheme for the Xfce4 Terminal][15]
+  * [Solarized Colorscheme for Gnome Terminal][15]
+  * [Solarized colour scheme for the Xfce4 Terminal][16]
 
 
 [1]: https://atom.io/
@@ -104,12 +105,13 @@ also be using a [Solarized Colorscheme][13].
 [4]: https://github.com/brndnmtthws/conky
 [5]: http://editorconfig.org/
 [6]: https://git-scm.com/
-[7]: https://tmux.github.io/
-[8]: http://www.vim.org/
-[9]: http://www.gnu.org/software/stow/
-[10]: https://atom.io/packages/package-sync
-[11]: https://github.com/tmux-plugins/tpm
-[12]: https://github.com/altercation/vim-colors-solarized
-[13]: http://ethanschoonover.com/solarized
-[14]: https://github.com/Anthony25/gnome-terminal-colors-solarized
-[15]: https://github.com/sgerrand/xfce4-terminal-colors-solarized
+[7]: http://www.postgresql.org/docs/current/static/app-psql.html
+[8]: https://tmux.github.io/
+[9]: http://www.vim.org/
+[10]: http://www.gnu.org/software/stow/
+[11]: https://atom.io/packages/package-sync
+[12]: https://github.com/tmux-plugins/tpm
+[13]: https://github.com/altercation/vim-colors-solarized
+[14]: http://ethanschoonover.com/solarized
+[15]: https://github.com/Anthony25/gnome-terminal-colors-solarized
+[16]: https://github.com/sgerrand/xfce4-terminal-colors-solarized

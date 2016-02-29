@@ -1,0 +1,3 @@
+\x auto
+\set HISTSIZE 2000
+\set PROMPT1 '%M:%> %n@%/%R%#%x '
