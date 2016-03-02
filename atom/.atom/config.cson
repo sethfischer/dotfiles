@@ -3,6 +3,10 @@
     disabledPackages: [
       "exception-reporting"
     ]
+    ignoredNames: [
+      ".git"
+      ".idea"
+    ]
     projectHome: "~/projects"
     themes: [
       "one-dark-ui"
@@ -13,5 +17,8 @@
     showIndentGuide: true
     showInvisibles: true
   "one-dark-ui": {}
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
