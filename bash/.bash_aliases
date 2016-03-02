@@ -10,3 +10,8 @@ alias l='ls -CF'
 if [ -n "$(type -P colordiff)" ]; then
     alias diff=colordiff
 fi
+
+# pygmentize
+if [ -n "$(type -P pygmentize)" ]; then
+    alias pyg=pygmentize
+fi
