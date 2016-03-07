@@ -17,6 +17,8 @@
     showIndentGuide: true
     showInvisibles: true
   "one-dark-ui": {}
+  "package-sync":
+    forceOverwrite: true
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
