@@ -1,4 +1,5 @@
 packages: [
+  "editorconfig"
   "language-puppet"
   "package-sync"
   "sort-lines"
