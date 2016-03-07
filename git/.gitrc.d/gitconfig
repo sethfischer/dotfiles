@@ -35,5 +35,8 @@
     added = yellow
     changed = green
     untracked = cyan
+[merge]
+    tool = vimdiff
 [push]
     default = simple
+
