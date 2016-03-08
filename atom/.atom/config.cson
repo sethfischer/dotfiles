@@ -17,6 +17,9 @@
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
+    tabLength: 4
+  "markdown-writer":
+    fileExtension: ".md, .markdown"
   "one-dark-ui": {}
   "package-sync":
     forceOverwrite: true

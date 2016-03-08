@@ -1,6 +1,7 @@
 packages: [
   "editorconfig"
   "language-puppet"
+  "markdown-writer"
   "package-sync"
   "sort-lines"
 ]
