@@ -1,0 +1,5 @@
+[Default Applications]
+text/plain=atom.desktop;gedit.desktop
+
+[Added Associations]
+text/plain=gedit.desktop;
