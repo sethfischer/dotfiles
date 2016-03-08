@@ -25,3 +25,6 @@
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".source.yaml":
+  editor:
+    tabLength: 4
