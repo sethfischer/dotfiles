@@ -2,6 +2,7 @@ packages: [
   "editorconfig"
   "language-puppet"
   "markdown-writer"
+  "open-recent"
   "package-sync"
   "sort-lines"
 ]
