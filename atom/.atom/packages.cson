@@ -1,5 +1,6 @@
 packages: [
   "editorconfig"
+  "hiera-eyaml"
   "language-puppet"
   "markdown-writer"
   "open-recent"
