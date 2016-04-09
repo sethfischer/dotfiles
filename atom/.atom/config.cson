@@ -24,6 +24,7 @@
   "one-dark-ui": {}
   "package-sync":
     forceOverwrite: true
+  "symbols-tree-view": {}
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true

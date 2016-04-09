@@ -6,4 +6,5 @@ packages: [
   "open-recent"
   "package-sync"
   "sort-lines"
+  "symbols-tree-view"
 ]
