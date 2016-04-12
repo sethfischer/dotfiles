@@ -2,6 +2,8 @@ packages: [
   "editorconfig"
   "hiera-eyaml"
   "language-puppet"
+  "linter"
+  "linter-puppet-lint"
   "markdown-writer"
   "open-recent"
   "package-sync"

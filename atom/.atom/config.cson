@@ -19,6 +19,10 @@
     showIndentGuide: true
     showInvisibles: true
     tabLength: 4
+  linter: {}
+  "linter-puppet-lint":
+    executablePath: "/usr/local/bin/puppet-lint"
+    oldVersion: false
   "markdown-writer":
     fileExtension: ".md, .markdown"
   "one-dark-ui": {}
