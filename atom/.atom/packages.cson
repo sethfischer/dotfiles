@@ -4,6 +4,7 @@ packages: [
   "language-puppet"
   "linter"
   "linter-puppet-lint"
+  "linter-shellcheck"
   "markdown-writer"
   "open-recent"
   "package-sync"
