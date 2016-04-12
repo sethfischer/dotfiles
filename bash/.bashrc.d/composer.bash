@@ -1,4 +1,4 @@
-# Set PATH so it includes user's composer bin, if it exists.
+# # Make commands installed with 'composer global require' available.
 if [ -d "$HOME/.config/composer/vendor/bin" ] ; then
-    PATH="$HOME/.config/composer/vendor/bin:$PATH"
+    PATH="$PATH:$HOME/.config/composer/vendor/bin"
 fi
