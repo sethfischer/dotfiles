@@ -34,6 +34,9 @@
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".puppet.source":
+  editor:
+    tabLength: 2
 ".source.yaml":
   editor:
     tabLength: 4
