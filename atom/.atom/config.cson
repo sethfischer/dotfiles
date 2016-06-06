@@ -28,6 +28,7 @@
   "one-dark-ui": {}
   "package-sync":
     forceOverwrite: true
+  "spell-check": {}
   "symbols-tree-view": {}
   "tree-view":
     hideIgnoredNames: true
