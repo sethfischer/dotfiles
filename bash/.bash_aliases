@@ -20,6 +20,7 @@ if [ -n "$(type -P pygmentize)" ]; then
 fi
 
 
+# cd into user tmp directory
 if [ -d "${HOME}/tmp" ]; then
     alias cdt="cd ${HOME}/tmp"
 fi
