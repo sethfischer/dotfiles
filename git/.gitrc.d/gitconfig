@@ -11,7 +11,7 @@
     tag-release = ! sh -c 'date=$(date +%Y%m%d) && \
         tag=${date}-$(expr $(git tag | grep $date | wc -l) + 1) && \
         git tag -a "$tag" -m \"Release $tag\" && \
-        echo \"$tag\\nTo push this tag: git push origin $tag\"'
+        echo \"$tag\\nTo push this tag, use\n\n    git push origin $tag\n\"'
 [branch]
     autosetuprebase = always
 [core]
@@ -39,4 +39,3 @@
     tool = vimdiff
 [push]
     default = simple
-
