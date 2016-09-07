@@ -1,3 +1,3 @@
 <?php
 
-$options['backup-dir'] = $_SERVER['HOME'].'/tmp/drush_backup';
+$options['backup-dir'] = $_SERVER['HOME'].'/var/drush_backup';
