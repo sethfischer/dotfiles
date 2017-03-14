@@ -3,6 +3,7 @@
     automaticallyUpdate: false
     disabledPackages: [
       "exception-reporting"
+      "linter-shellcheck"
     ]
     ignoredNames: [
       ".git"
