@@ -21,6 +21,8 @@
     showIndentGuide: true
     showInvisibles: true
     tabLength: 4
+  "git-diff":
+    showIconsInEditorGutter: true
   linter: {}
   "linter-puppet-lint":
     executablePath: "/usr/local/bin/puppet-lint"
