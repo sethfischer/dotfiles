@@ -1,4 +1,5 @@
 packages: [
+  "atom-beautify"
   "busy-signal"
   "editorconfig"
   "hiera-eyaml"
