@@ -84,7 +84,7 @@ Clone [Tmux Plugin Manager][12]:
 
 ```sh
 mkdir -p ~/.tmux/plugins
-$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 
