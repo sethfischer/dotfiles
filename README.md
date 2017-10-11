@@ -1,5 +1,4 @@
-sethfischer's dotfiles
-======================
+# sethfischer's dotfiles
 
   * [atom][1]
   * [bash][2]
@@ -12,8 +11,7 @@ sethfischer's dotfiles
   * [vim][9]
 
 
-Install
--------
+## Install
 
 Install [GNU Stow][10]:
 
