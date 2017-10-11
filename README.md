@@ -71,12 +71,10 @@ Install the community package [`package-sync`][11] and execute the command
 Git configuration is enabled with an include.path variable (git 1.7.10+) in
 `~/.gitconfig`.
 
-```
-[user]
-    name = Your Name
-    email = user@example.com
-[include]
-    path = .gitrc.d/gitconfig
+```sh
+git config --global user.name "Your Name"
+git config --global user.email "user@example.com"
+git config --global include.path ".gitrc.d/gitconfig"
 ```
 
 
