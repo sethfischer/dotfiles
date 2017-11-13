@@ -96,6 +96,8 @@ also be using a [Solarized Colorscheme][14].
   * [Solarized Colorscheme for Gnome Terminal][15]
   * [Solarized colour scheme for the Xfce4 Terminal][16]
 
+On startup vim will clone [Vundle][17] into `~/.vim/bundle/Vundle.vim` Within
+vim run `:PluginInstall`.
 
 [1]: https://atom.io/
 [2]: https://www.gnu.org/software/bash/
@@ -113,3 +115,4 @@ also be using a [Solarized Colorscheme][14].
 [14]: http://ethanschoonover.com/solarized
 [15]: https://github.com/Anthony25/gnome-terminal-colors-solarized
 [16]: https://github.com/sgerrand/xfce4-terminal-colors-solarized
+[17]: https://github.com/VundleVim/Vundle.vim
