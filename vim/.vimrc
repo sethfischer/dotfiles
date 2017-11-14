@@ -61,6 +61,12 @@ autocmd BufWritePre * StripWhitespace
 " vimwiki/vimwiki configuration.
 let g:vimwiki_list = [{'path': '~/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
+augroup vimwiki_git_autocommit
+    autocmd!
+    autocmd BufRead ~/wiki/index.md !cd ~/wiki && git pull origin master
+    autocmd BufWritePost ~/wiki/* !cd ~/wiki && git add .;git commit -m "Auto commit"
+augroup END
+
 
 " Format status line.
 function! CurDir()
