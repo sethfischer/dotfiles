@@ -1,5 +1,5 @@
 set nocompatible
-filetype off
+filetype plugin indent on
 
 set number
 set mouse=a
@@ -40,23 +40,26 @@ call vundle#begin()
     Plugin 'altercation/vim-colors-solarized'
     Plugin 'editorconfig/editorconfig-vim'
     Plugin 'ntpeters/vim-better-whitespace'
+    Plugin 'vimwiki/vimwiki'
 call vundle#end()
 
-filetype plugin indent on
 
-
-" altercation/vim-colors-solarized configuration
+" altercation/vim-colors-solarized configuration.
 syntax enable
 set background=dark
 colorscheme solarized
 
-" ntpeters/vim-better-whitespace configuration
+" ntpeters/vim-better-whitespace configuration.
 autocmd BufWritePre * StripWhitespace
 
 
 " Highlight long comment lines.
 :highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
 :match OverLength '\(^\(\s\)\{-}\(*\|//\|/\*\)\{1}\(.\)*\(\%81v\)\)\@<=\(.\)\{1,}$'
+
+
+" vimwiki/vimwiki configuration.
+let g:vimwiki_list = [{'path': '~/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 
 " Format status line.
