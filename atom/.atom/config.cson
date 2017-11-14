@@ -28,7 +28,6 @@
     executablePath: "/usr/local/bin/puppet-lint"
     oldVersion: false
   "linter-ui-default":
-    panelHeight: 69
     showPanel: true
   "markdown-writer":
     fileExtension: ".md, .markdown"
