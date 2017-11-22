@@ -14,6 +14,7 @@ packages: [
   "markdown-writer"
   "open-recent"
   "package-sync"
+  "rst-preview"
   "sort-lines"
   "symbols-tree-view"
 ]
