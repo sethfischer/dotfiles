@@ -6,6 +6,7 @@ packages: [
   "intentions"
   "language-patch"
   "language-puppet"
+  "language-restructuredtext"
   "language-varnish"
   "linter"
   "linter-puppet-lint"
