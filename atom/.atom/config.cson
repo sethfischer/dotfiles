@@ -11,6 +11,7 @@
       ".vagrant"
     ]
     projectHome: "~/projects"
+    restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
