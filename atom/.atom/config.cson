@@ -34,7 +34,18 @@
   "one-dark-ui": {}
   "package-sync":
     forceOverwrite: true
-  "spell-check": {}
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.restructuredtext"
+    ]
+    locales: [
+      "en-GB"
+    ]
   "symbols-tree-view": {}
   "tree-view":
     hideIgnoredNames: true
