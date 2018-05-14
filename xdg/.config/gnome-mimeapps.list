@@ -3,3 +3,5 @@ text/plain=atom.desktop;gedit.desktop
 
 [Added Associations]
 text/plain=gedit.desktop;
+text/calendar=thunderbird.desktop;
+text/x-vcard=thunderbird.desktop;
