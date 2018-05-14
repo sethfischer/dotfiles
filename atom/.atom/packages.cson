@@ -5,6 +5,7 @@ packages: [
   "hiera-eyaml"
   "highlight-line"
   "intentions"
+  "language-ini"
   "language-patch"
   "language-puppet"
   "language-restructuredtext"
@@ -19,5 +20,6 @@ packages: [
   "package-sync"
   "rst-preview"
   "sort-lines"
+  "ssh-config"
   "symbols-tree-view"
 ]
