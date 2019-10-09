@@ -37,7 +37,7 @@ endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
-    Plugin 'altercation/vim-colors-solarized'
+    " Plugin 'altercation/vim-colors-solarized'
     Plugin 'editorconfig/editorconfig-vim'
     Plugin 'ntpeters/vim-better-whitespace'
     Plugin 'vimwiki/vimwiki'
@@ -45,9 +45,9 @@ call vundle#end()
 
 
 " altercation/vim-colors-solarized configuration.
-syntax enable
-set background=dark
-colorscheme solarized
+" syntax enable
+" set background=dark
+" colorscheme solarized
 
 " ntpeters/vim-better-whitespace configuration.
 autocmd BufWritePre * StripWhitespace
