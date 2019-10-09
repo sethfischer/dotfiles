@@ -1,6 +1,7 @@
 *~
 # Atom
 atom/.atom/.apm/
+atom/.atom/.atom-socket-secret-*
 atom/.atom/.node-gyp/
 atom/.atom/blob-store/
 atom/.atom/compile-cache/
