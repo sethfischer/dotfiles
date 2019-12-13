@@ -26,7 +26,7 @@
     showIconsInEditorGutter: true
   linter: {}
   "linter-puppet-lint":
-    executablePath: "/usr/local/bin/puppet-lint"
+    executablePath: "/usr/bin/puppet-lint"
     oldVersion: false
   "linter-ui-default":
     showPanel: true
