@@ -18,6 +18,10 @@ if [ -x "$(command -v pygmentize)" ]; then
     alias pyg=pygmentize
 fi
 
+# gnome-control-center sound
+if [ -x "$(command -v gnome-control-center)" ]; then
+    alias sound="gnome-control-center sound"
+fi
 
 # cd into user tmp directory
 if [ -d "${HOME}/tmp" ]; then
