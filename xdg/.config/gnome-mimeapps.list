@@ -1,7 +1,8 @@
 [Default Applications]
-text/plain=atom.desktop;gedit.desktop
+text/calendar=thunderbird.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-TT4RQ0.desktop
+message/rfc822=userapp-Thunderbird-TT4RQ0.desktop
 
 [Added Associations]
-text/plain=gedit.desktop;
-text/calendar=thunderbird.desktop;
-text/x-vcard=thunderbird.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-K6HQQ0.desktop;userapp-Thunderbird-TT4RQ0.desktop;
+message/rfc822=userapp-Thunderbird-K6HQQ0.desktop;userapp-Thunderbird-TT4RQ0.desktop;
