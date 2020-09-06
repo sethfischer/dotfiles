@@ -4,5 +4,5 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-[rsnapshot/rsnapshot.conf]
+[rsnapshot/.rsnapshot.conf]
 indent_style = tab
