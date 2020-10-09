@@ -12,6 +12,8 @@
         tag=${date}-$(expr $(git tag | grep $date | wc -l) + 1) && \
         git tag -a "$tag" -m \"Release $tag\" && \
         echo \"$tag\\nTo push this tag, use\n\n    git push origin $tag\n\"'
+    qlog = log --graph --abbrev-commit \
+        --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 [branch]
     autosetuprebase = always
 [core]
