@@ -48,7 +48,7 @@ Terminal emulator
 The Solarized Colorscheme for Vim and dircolors require the terminal emulator
 to be configured to use 256 colours.
 
-In Gnome Terminal select `Run custom command instead of my shell` and enter the
+In Gnome Terminal select "Run custom command instead of my shell" and enter the
 following custom command:
 
 .. code-block:: shell
@@ -60,14 +60,14 @@ atom
 ----
 
 Install the community package `package-sync`_ and execute the command
-`package-sync:sync`.
+``package-sync:sync``.
 
 
 git
 ---
 
 Git configuration is enabled with an include.path variable (git 1.7.10+) in
-`~/.gitconfig`.
+``~/.gitconfig``.
 
 .. code-block:: shell
 
@@ -98,8 +98,8 @@ be using a `Solarized Colorscheme`_.
 * `Solarized Colorscheme for Gnome Terminal`_
 * `Solarized colour scheme for the Xfce4 Terminal`_
 
-On startup vim will clone `Vundle`_ into `~/.vim/bundle/Vundle.vim` Within vim
-run `:PluginInstall`.
+On startup vim will clone `Vundle`_ into ``~/.vim/bundle/Vundle.vim`` Within vim
+run ``:PluginInstall``.
 
 
 .. _`GNU Stow`: http://www.gnu.org/software/stow/
