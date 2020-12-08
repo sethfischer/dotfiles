@@ -7,5 +7,6 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "platformio-ide.activateOnlyOnPlatformIOProject": true
+    "platformio-ide.activateOnlyOnPlatformIOProject": true,
+    "xmlTools.splitAttributesOnFormat": true
 }
