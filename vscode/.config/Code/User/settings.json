@@ -4,6 +4,7 @@
         80,
         120
     ],
+    "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "platformio-ide.activateOnlyOnPlatformIOProject": true
