@@ -95,8 +95,8 @@ vim
 To use the `Solarized Colorscheme for Vim`_ the terminal emulator should also
 be using a `Solarized Colorscheme`_.
 
-  * `Solarized Colorscheme for Gnome Terminal`_
-  * `Solarized colour scheme for the Xfce4 Terminal`_
+* `Solarized Colorscheme for Gnome Terminal`_
+* `Solarized colour scheme for the Xfce4 Terminal`_
 
 On startup vim will clone `Vundle`_ into `~/.vim/bundle/Vundle.vim` Within vim
 run `:PluginInstall`.
