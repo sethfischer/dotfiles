@@ -4,6 +4,9 @@
         80,
         120
     ],
+    "files.associations": {
+        "Vagrantfile": "ruby"
+    },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
