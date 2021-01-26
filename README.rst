@@ -2,6 +2,8 @@
 sethfischer's dotfiles
 ======================
 
+|test-status|
+
 
 Install
 -------
@@ -110,3 +112,8 @@ run ``:PluginInstall``.
 .. _`Solarized Colorscheme for Gnome Terminal`: https://github.com/Anthony25/gnome-terminal-colors-solarized
 .. _`Solarized colour scheme for the Xfce4 Terminal`: https://github.com/sgerrand/xfce4-terminal-colors-solarized
 .. _`Vundle`: https://github.com/VundleVim/Vundle.vim
+
+
+.. |test-status| image:: https://github.com/sethfischer/dotfiles/workflows/lint/badge.svg
+    :target: https://github.com/sethfischer/dotfiles/actions?query=workflow%3Alint
+    :alt: Test status

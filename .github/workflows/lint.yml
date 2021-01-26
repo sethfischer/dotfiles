@@ -1,0 +1,13 @@
+name: lint
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Lint shell scripts
+        run: bash lint-shell.sh

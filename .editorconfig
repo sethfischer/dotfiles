@@ -7,3 +7,6 @@ insert_final_newline = true
 
 [rsnapshot/.rsnapshot.conf]
 indent_style = tab
+
+[*.yml]
+indent_size = 2
