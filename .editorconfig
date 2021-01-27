@@ -5,8 +5,11 @@ end_of_line = lf
 indent_size = 4
 insert_final_newline = true
 
-[rsnapshot/.rsnapshot.conf]
-indent_style = tab
-
 [*.yml]
 indent_size = 2
+
+[Makefile]
+indent_style = tab
+
+[rsnapshot/.rsnapshot.conf]
+indent_style = tab
