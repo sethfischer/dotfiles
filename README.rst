@@ -10,16 +10,16 @@ Install
 
 Install `GNU Stow`_:
 
-.. code-block:: shell
+.. code-block:: console
 
-    sudo apt-get install stow
+    $ sudo apt-get install stow
 
 
 Clone the repository:
 
-.. code-block:: shell
+.. code-block:: console
 
-    git clone https://github.com/sethfischer/dotfiles.git ~/.dotfiles
+    $ git clone https://github.com/sethfischer/dotfiles.git ~/.dotfiles
 
 
 Dotfiles are symlinked to the home directory with GNU Stow. The examples below
@@ -27,18 +27,18 @@ demonstrate how GNU Bash configuration is enabled and disabled.
 
 Enable Bash configuration:
 
-.. code-block:: shell
+.. code-block:: console
 
-    cd ~/.dotfiles
-    stow bash
+    $ cd ~/.dotfiles
+    $ stow bash
 
 
 Disable Bash configuration:
 
-.. code-block:: shell
+.. code-block:: console
 
-    cd ~/.dotfiles
-    stow -D bash
+    $ cd ~/.dotfiles
+    $ stow -D bash
 
 
 The following utilities require additional configuration.
@@ -53,7 +53,7 @@ to be configured to use 256 colours.
 In Gnome Terminal select "Run custom command instead of my shell" and enter the
 following custom command:
 
-.. code-block:: shell
+.. code-block::
 
     env TERM=xterm-256color bash
 
@@ -71,14 +71,14 @@ git
 Git configuration is enabled with an include.path variable (git 1.7.10+) in
 ``~/.gitconfig``.
 
-.. code-block:: shell
+.. code-block:: console
 
-    git config --global user.name "Your Name"
-    git config --global user.email "user@example.com"
-    git config --global include.path ".gitrc.d/gitconfig"
-    git config --global gist.home = "~/src/gist.github.com"  # https://github.com/weakish/gister
-    cd ~/.dotfiles
-    stow git
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email "user@example.com"
+    $ git config --global include.path ".gitrc.d/gitconfig"
+    $ git config --global gist.home = "~/src/gist.github.com"  # https://github.com/weakish/gister
+    $ cd ~/.dotfiles
+    $ stow git
 
 
 tmux
@@ -86,10 +86,10 @@ tmux
 
 Clone `Tmux Plugin Manager`_:
 
-.. code-block:: shell
+.. code-block:: console
 
-    mkdir -p ~/.tmux/plugins
-    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    $ mkdir -p ~/.tmux/plugins
+    $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
 vim
