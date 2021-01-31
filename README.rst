@@ -76,6 +76,7 @@ Git configuration is enabled with an include.path variable (git 1.7.10+) in
     git config --global user.name "Your Name"
     git config --global user.email "user@example.com"
     git config --global include.path ".gitrc.d/gitconfig"
+    git config --global gist.home = "~/src/gist.github.com"
     cd ~/.dotfiles
     stow git
 
