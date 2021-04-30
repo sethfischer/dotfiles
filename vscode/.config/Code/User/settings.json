@@ -12,5 +12,11 @@
     "files.trimTrailingWhitespace": true,
     "platformio-ide.activateOnlyOnPlatformIOProject": true,
     "xmlTools.splitAttributesOnFormat": true,
-    "editor.renderControlCharacters": true
+    "editor.renderControlCharacters": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }
