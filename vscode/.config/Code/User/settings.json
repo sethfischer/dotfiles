@@ -13,8 +13,8 @@
     "files.trimTrailingWhitespace": true,
     "platformio-ide.activateOnlyOnPlatformIOProject": true,
     "spellright.documentTypes": [
-        "markdown",
         "latex",
+        "markdown",
         "plaintext"
     ],
     "spellright.language": [
