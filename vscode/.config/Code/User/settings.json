@@ -12,6 +12,14 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "platformio-ide.activateOnlyOnPlatformIOProject": true,
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellright.language": [
+        "en_GB"
+    ],
     "workbench.editorAssociations": [
         {
             "filenamePattern": "*.ipynb",
